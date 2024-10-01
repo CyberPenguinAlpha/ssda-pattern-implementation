@@ -2,19 +2,24 @@
 $username = $_POST['username'];
 $pw1 = $_POST['password1'];
 $pw2 = $_POST['password2'];
+//cont
 
 // validate 
 if ($pw1 != $pw2 || !valid($pw1) || !valid($username))
     return redirectBack(400);
+/model
 
 // hash password
 $pwHash = hash($pw1);
+//model
 
 $title = "<title>Welcome $username</title>";
+/view
 
 // initialize database
 $db = getDatabase('myHost', 'mypassword', 'myDb');
 $table = "users";
+/model
 
 // create user
 $success = $db->query("INSERT INTO $table (username, password) 
@@ -22,20 +27,5 @@ $success = $db->query("INSERT INTO $table (username, password)
 
 if(!$success)
     return redirectBack(500);
+/model
 
-// set up opening tag 
-if(getCurrentSeason() == 'summer');
-    $h1Style = '<h1 style="color: RED">';
-else
-    $h1Style = '<h1 style="color: BLUE">';
-
-echo "<html>
-            <head>
-                $title
-            </head>
-            <body>
-                $h1Style
-                    Welcome $username
-                </h1>
-            </body>
-        </html>";
