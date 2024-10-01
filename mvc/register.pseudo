@@ -13,8 +13,7 @@ if ($pw1 != $pw2 || !valid($pw1) || !valid($username))
 $pwHash = hash($pw1);
 //model
 
-$title = "<title>Welcome $username</title>";
-/view
+
 
 // initialize database
 $db = getDatabase('myHost', 'mypassword', 'myDb');
