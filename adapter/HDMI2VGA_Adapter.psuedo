@@ -1,4 +1,4 @@
-public class H2V_adapter impliments VideoPlug
+public class H2V_adapter impliments VideoPlug /** CHANGE: HDMI Adapter to intercept VGA behavior **/
 {
 	VideoPlug HDMI;
 
