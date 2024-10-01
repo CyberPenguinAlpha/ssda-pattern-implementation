@@ -1,4 +1,3 @@
-//implements VideoSocket
 public class H2V_adapter impliments VideoPlug
 {
 	VideoPlug HDMI;
@@ -7,14 +6,8 @@ public class H2V_adapter impliments VideoPlug
 	{
 		this.HDMI = plug;
 	}
-//takes/intercepts vga request
 	public display(int x, int y)
 	{
 		plug.digitalDisplay();
 	}
-//transforms arguments
-plug.display(1024, 768);
-//calls hdmi w transformed args
-//recieves HDMI return
-
 }
