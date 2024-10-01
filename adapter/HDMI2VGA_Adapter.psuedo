@@ -2,7 +2,7 @@ public class H2V_adapter impliments VideoPlug
 {
 	VideoPlug HDMI;
 
-	public adapter(VideoPlug plug)
+	public H2V_adapter(VideoPlug plug)
 	{
 		this.HDMI = plug;
 	}
