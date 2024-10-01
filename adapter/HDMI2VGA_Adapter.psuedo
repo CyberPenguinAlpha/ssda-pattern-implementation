@@ -1,9 +1,24 @@
-//impliments VideoSocket
-
-
+//implements VideoSocket
+public class H2V_adapter impliments VideoPlug
+{
 //takes/intercepts vga request
+
 //transforms arguments
 //calls hdmi w transformed args
 //recieves HDMI return
 //converns to expected form
 //returns to caller
+}
+/**
+// DO NOT MODIFY THIS CLASS - what if we need to use it elsewhere?
+public class VGAPlug implements VideoPlug{
+
+	// constructor
+	public VGAPlug(){};
+	
+	public display(int width, int height){
+		print "Displaying a " + width + " by " +
+			height + " analog image!";
+	}
+}
+**/ 
