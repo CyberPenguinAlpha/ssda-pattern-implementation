@@ -1,4 +1,4 @@
-/** CHANGE: Direct import of controller responsibilities**/
+/** CHANGE: Direct import of controller responsibilities, refactored calls to appropriate functions (render & createUser)**/
 
 //get registration information from the user
 $username = $_POST['username'];
@@ -8,6 +8,11 @@ $pw2 = $_POST['password2'];
 // validate 
 if ($pw1 != $pw2 || !valid($pw1) || !valid($username))
     return redirectBack(400);
+
+//hash pw and create user (model)
+include 'model.pseudo';
+if(!createUser($username, $pw1));
+    return redirectBack(500);
 
 // set up opening tag for season (view)
 $h1Style = (getCurrentSeason() == 'summer') ? '<h1 style="color: RED">' : '<h1 style="color: BLUE">';
