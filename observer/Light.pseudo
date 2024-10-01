@@ -9,7 +9,7 @@ public class Light{
 	public void turnOn(){
 	}
 
-	public notify(/*some value*/){
-		//notify logic
+	public notify(){
+		turnOn();
 	}
 }	
