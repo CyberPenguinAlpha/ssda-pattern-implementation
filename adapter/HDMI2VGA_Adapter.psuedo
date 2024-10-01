@@ -2,8 +2,9 @@
 public class H2V_adapter impliments VideoPlug
 {
 //takes/intercepts vga request
-
+VideoPlug plug = new VGAPlug();
 //transforms arguments
+
 //calls hdmi w transformed args
 //recieves HDMI return
 //converns to expected form
