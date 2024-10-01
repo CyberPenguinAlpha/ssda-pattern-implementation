@@ -8,3 +8,8 @@ $pw2 = $_POST['password2'];
 // validate 
 if ($pw1 != $pw2 || !valid($pw1) || !valid($username))
     return redirectBack(400);
+
+// set up opening tag for season (view)
+$h1Style = (getCurrentSeason() == 'summer') ? '<h1 style="color: RED">' : '<h1 style="color: BLUE">';
+include 'view.pseudo';
+render($username, $h1style); //call view
