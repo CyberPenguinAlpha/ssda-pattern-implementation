@@ -1,18 +1,16 @@
 public class Button  
 { 
-	public list lightCollection = new list(); /** CHANGE: Created list for storage of observing lights **/
+	public list observerCollection = new list(); /** CHANGE: Created list for storage of observing lights **/
 	public void press() { /** CHANGE: On press, notify each observing light **/
-		for lights in lightCollection
-			light.notify();
+		for observer in observerCollection
+			observer.notify();
 	}
-	public registerObserver(Light l) /** CHANGE: Impliment generic observer registration logic **/
+	public registerObserver(observer o) /** CHANGE: Impliment generic observer registration logic **/
 	{
-	if(lightCollection!=null)
-		lightCollection.add(l);
+		observerCollection.add(o);
 	}
-	public unregisterObserver(Light l)
+	public unregisterObserver(observer o)
 	{
-	if(lightCollection!=null)
-		lightCollection.remove(l);
+		observerCollection.remove(o);
 	}
 }
