@@ -8,7 +8,10 @@ public class H2V_adapter impliments VideoPlug
 		this.oldPlug = plug;
 	}
 //takes/intercepts vga request
-
+	public display(int x, int y)
+	{
+		//callHDMI
+	}
 //transforms arguments
 plug.display(1024, 768);
 //calls hdmi w transformed args
