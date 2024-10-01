@@ -1,11 +1,11 @@
 //implements VideoSocket
 public class H2V_adapter impliments VideoPlug
 {
-	VideoPlug oldPlug;
+	VideoPlug HDMI;
 
 	public adapter(VideoPlug plug)
 	{
-		this.oldPlug = plug;
+		this.HDMI = plug;
 	}
 //takes/intercepts vga request
 	public display(int x, int y)
@@ -18,16 +18,3 @@ plug.display(1024, 768);
 //recieves HDMI return
 
 }
-/**
-// DO NOT MODIFY THIS CLASS - what if we need to use it elsewhere?
-public class VGAPlug implements VideoPlug{
-
-	// constructor
-	public VGAPlug(){};
-	
-	public display(int width, int height){
-		print "Displaying a " + width + " by " +
-			height + " analog image!";
-	}
-}
-**/ 
