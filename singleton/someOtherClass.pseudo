@@ -1,7 +1,6 @@
 public SomeOtherClass{
-
 	public main(){
-		Logger l = new Logger();
+		Logger l = Logger.Logger(); /** CHANGE: Updated logger call signature**/
 		l.info("hello from some other class!");
 	}
 }
