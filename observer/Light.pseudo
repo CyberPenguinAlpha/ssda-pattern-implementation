@@ -8,4 +8,8 @@ public class Light{
 	// light turns on with specified color for 1 second	
 	public void turnOn(){
 	}
+
+	public notify(/*some value*/){
+		//notify logic
+	}
 }	
