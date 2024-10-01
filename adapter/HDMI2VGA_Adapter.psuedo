@@ -1,8 +1,14 @@
 //implements VideoSocket
 public class H2V_adapter impliments VideoPlug
 {
+	VideoPlug oldPlug;
+
+	public adapter(VideoPlug plug)
+	{
+		this.oldPlug = plug;
+	}
 //takes/intercepts vga request
-VideoPlug plug = new VGAPlug();
+
 //transforms arguments
 plug.display(1024, 768);
 //calls hdmi w transformed args
