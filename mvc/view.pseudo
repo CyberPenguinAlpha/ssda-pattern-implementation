@@ -1,20 +1,16 @@
-/** CHANGE: imported view info directly**/
-
-$title = "<title>Welcome $username</title>"; //needs to pull username from model
-
-// set up opening tag 
-if(getCurrentSeason() == 'summer'); //wheres getCurrentSeason?
-    $h1Style = '<h1 style="color: RED">';
-else
-    $h1Style = '<h1 style="color: BLUE">';
-
-echo "<html>
-            <head>
-                $title
-            </head>
-            <body>
-                $h1Style
-                    Welcome $username
-                </h1>
-            </body>
-        </html>";
+/** CHANGE: imported view info directly, moved getCurrentSeason to controller and wrapped view in render()**/
+function render($username, $h1style)
+{
+    $title = "<title>Welcome $username</title>"; 
+    //display
+    echo "<html>
+                <head>
+                    $title
+                </head>
+                <body>
+                    $h1Style
+                        Welcome $username
+                    </h1>
+                </body>
+            </html>";
+}
