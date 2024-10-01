@@ -1,0 +1,9 @@
+//impliments VideoSocket
+
+
+//takes/intercepts vga request
+//transforms arguments
+//calls hdmi w transformed args
+//recieves HDMI return
+//converns to expected form
+//returns to caller
